@@ -11,7 +11,7 @@
 							<Button text="Add" press="onAdd" />
 						</items>
 					</HBox>
-					<Button text="Get Fragment" press="onPressOfGetFragment" />
+					<Button text="Get Button" press="onPressOfGetButton" />
 					<Panel id="myPanel" width="100%" />
 				</content>
 			</Page>

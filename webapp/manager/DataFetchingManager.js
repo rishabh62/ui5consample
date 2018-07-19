@@ -1,7 +1,7 @@
 sap.ui.define([
     "sap/ui/base/Object"
 ], function(Object) {
-    return new Object.extend("com.sap.ui5con.OOPSUI5Con.manager.DataFetchingManager", {
+    return Object.extend("com.sap.ui5con.OOPSUI5Con.manager.DataFetchingManager", {
         constructor: function(oDelegate, fnCallback) {
             this._oDelegate = oDelegate;
             this._fnCallback = fnCallback;

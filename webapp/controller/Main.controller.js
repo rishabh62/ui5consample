@@ -19,6 +19,15 @@ sap.ui.define([
                 }.bind(this));
         },
 
+        onPressOfGetButton: function() {
+            sap.ui.require(["com/sap/ui5con/OOPSUI5Con/manager/ActionButtonManager"], function(ButtonManager) {
+                if(!this._oButtonPanel) {
+                    this._oButtonPanel = new ButtonManager(this).getView();
+                    this.getView().byId("myPanel").addContent(this._oButtonPanel );
+                }
+            }.bind(this));
+        },
+
         alertData: function (data) {
             alert(data);
         }

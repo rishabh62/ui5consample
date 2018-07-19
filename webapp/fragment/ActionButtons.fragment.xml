@@ -1,0 +1,11 @@
+<core:FragmentDefinition
+        xmlns="sap.m"
+        xmlns:core="sap.ui.core">
+    <HBox>
+        <items>
+            <Button text="A" press="onPressOfA"/>
+            <Button text="B" press="onPressOfB"/>
+            <Button text="C" press="onPressOfC"/>
+        </items>
+    </HBox>
+</core:FragmentDefinition>
