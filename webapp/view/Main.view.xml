@@ -3,7 +3,17 @@
 	<App id="idAppControl">
 		<pages>
 			<Page title="{i18n>title}">
-				<content></content>
+				<content>
+					<HBox>
+						<items>
+							<Input id="input1" />
+							<Input id="input2" />
+							<Button text="Add" press="onAdd" />
+						</items>
+					</HBox>
+					<Button text="Get Fragment" press="onPressOfGetFragment" />
+					<Panel id="myPanel" width="100%" />
+				</content>
 			</Page>
 		</pages>
 	</App>
