@@ -1,25 +1,25 @@
-sap.ui.define(["sap/ui/base/Object"], function(Object) {
+sap.ui.define(["sap/ui/base/Object"], function (Object) {
     return Object.extend("om.sap.ui5con.OOPSUI5Con.manager.ActionButtonManager", {
-        constructor: function(oDelegate) {
+        constructor: function (oDelegate) {
             this._oDelegate = oDelegate;
             this._oFragmentInstance = undefined;
             this._createFragment();
         },
-        _createFragment: function() {
-            if(!this._oFragmentInstance) {
+        _createFragment: function () {
+            if (!this._oFragmentInstance) {
                 this._oFragmentInstance = sap.ui.xmlfragment("com.sap.ui5con.OOPSUI5Con.fragment.ActionButtons", this);
             }
         },
-        getView: function() {
+        getView: function () {
             return this._oFragmentInstance;
         },
-        onPressOfA: function() {
+        onPressOfA: function () {
             alert("a");
         },
-        onPressOfB: function() {
+        onPressOfB: function () {
             alert("b");
         },
-        onPressOfC: function() {
+        onPressOfC: function () {
             alert("c");
         }
     });
